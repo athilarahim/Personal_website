@@ -18,6 +18,7 @@
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="index.css">
+  
 </head>
 <body class="background ">
     
@@ -75,7 +76,7 @@
 
           <!--Image-->
           <div class="view overlay z-depth-1-half">
-            <img src="https://mdbootstrap.com/img/Photos/Others/img%20(16).jpg" class="img-fluid" alt="">
+            <img src="images\photo_collage.png" class="img-fluid" alt="">
             <a href="#">
               <div class="mask rgba-white-light"></div>
             </a>
@@ -89,10 +90,14 @@
 
           <h3 class="font-weight-bold">Hi there...</h3>
 
-          <p class="text-muted">I'm Athila Rahim, student of TKM College Of Engineering, currently pursuing Second year of Btech degree in Computer Science department.
-             Interested in web development and exploring more new possibilies.</p>
+          <p class="text-muted">I'm Athila Rahim, a passionate Software Development Engineer with over 1+ years of experience in Software Testing and Developing. 
+            I blend my web development skills with an insatiable curiosity for innovation. 
+            Beyond the screen, I'm a talkative and friendly person, always seeking new conversations and stories. 
+            Dive into my Linkedin, Facebook or Instagram profile to know more about me. 
+            Let's connect and craft something remarkable together!
+             </p>
 
-          <a class="btn btn-brown btn-md ml-0" href="#" role="button">Download CV</a>
+          <a class="btn btn-brown btn-md ml-0" href="assets/AthilaRahim_Resume.pdf" download="AthilaRahim_Resume" role="button">Download Resume</a>
 
         </div>
         <!--Grid column-->
@@ -118,25 +123,25 @@
       <!-- Section description -->
       <h4 class="text-center font-weight-normal text-white mx-auto mb-4 pb-2">Anytime , Anywhere!</h4>
   
-      <form class="mb-5 mx-md-5" action="">
+      <form class="mb-5 mx-md-5" id="myForm" action="https://formspree.io/rahimathila@gmail.com" method="POST">
   
         <div class="row">
           <div class="col-md-4 mb-4">
   
             <!-- Name -->
-            <input type="text" id="name" class="form-control z-depth-1" placeholder="Name">
+            <input type="text" id="name" name="name" class="form-control z-depth-1" placeholder="Name">
   
           </div>
           <div class="col-md-4 mb-4">
   
             <!-- Email -->
-            <input type="email" id="email" class="form-control z-depth-1" placeholder="Email">
+            <input type="email" id="email" name="email" class="form-control z-depth-1" placeholder="Email">
   
           </div>
           <div class="col-md-4 mb-4">
   
             <!-- Phone -->
-            <input type="number" id="phone" class="form-control z-depth-1" placeholder="Phone (optional)">
+            <input type="number" id="phone" name="phone" class="form-control z-depth-1" placeholder="Phone (optional)">
   
           </div>
         </div>
@@ -145,7 +150,7 @@
           <div class="col-md-12 mb-4">
   
             <!-- Subject -->
-            <input type="text" id="subject" class="form-control z-depth-1" placeholder="Subject">
+            <input type="text" id="subject" name="subject" class="form-control z-depth-1" placeholder="Subject">
   
           </div>
         </div>
@@ -154,7 +159,7 @@
           <div class="col-md-12">
   
             <div class="form-group mb-4">
-              <textarea class="form-control rounded z-depth-1" id="message" rows="3" placeholder="How can I help?"></textarea>
+              <textarea class="form-control rounded z-depth-1" id="message" name="message" rows="3" placeholder="How can I help?"></textarea>
             </div>
   
             <div class="text-center">
@@ -171,6 +176,7 @@
   
   
   </div>
+
 
 
  <!-- End your project here-->
