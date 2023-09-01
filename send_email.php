@@ -8,9 +8,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $to = "rahimathila@gmail.com"; 
     //$subject = "Message from personal website";
-    $headers = "From: $email" . "\r\n";
+   // $headers = "From: $email" . "\r\n";
 
-    mail($to, $subject, $message, $headers);
+    mail($subject, $message, $name, $email);
     echo "Email sent successfully!";
 }
 ?>
