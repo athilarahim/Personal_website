@@ -18,6 +18,9 @@
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
 </head>
 <body class="background">
   <!--.........Navbar........ -->
@@ -50,11 +53,10 @@
           aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-user"></i> Profile </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-          <a class="dropdown-item" href="About.html">About</a>
-          <a class="dropdown-item" href="#">Career</a>
-          <a class="dropdown-item" href="#">Achievements</a>
-          <a class="dropdown-item" href="#">Interests</a>
-
+          <a class="dropdown-item" href="#aboutblock">About Me</a>
+          <a class="dropdown-item" href="#careerblock">My Career</a>
+          <a class="dropdown-item" href="#contactblock">Contact Me</a>
+          
         </div>
       </li>
     </ul>
@@ -70,14 +72,16 @@
     <h1 class="name flex-center flex-column">Athila Rahim</h1>
     <h3 class="namesub flex-center">Web Developer & Coding Enthusiast </h3>
     <div class="flex-center mt-3">
-    <a href="About.html" class="btn-outline-white btn text-capitalize rounded-pill hoverable">About me..</a>
+    <a href="" class="btn-outline-white btn text-capitalize rounded-pill hoverable">About me..</a>
     </div>
     </div>
 
 
-<!--Career block-->
+    <!--About block-->
+   <div class="aboutblock" id="aboutblock" data-aos="fade-up">
+     <div class="container my-5 py-5 z-depth-1 bg-white">
 
-    <div class="container my-5 py-5 z-depth-1 bg-white mt-5"> 
+ 
       <!--Section: Content-->
       <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
   
@@ -85,26 +89,30 @@
         <div class="row">
   
           <!--Grid column-->
-          <div class="col-md-6 mb-4 mb-md-0">
+          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
   
             <!--Image-->
             <div class="view overlay z-depth-1-half">
-              <img src="images/achievement.jpg" class="img-fluid" alt="">
-              <a href="#">
-                <div class="mask rgba-white-light"></div>
-              </a>
+              <img src="images\photo_collage.png" class="img-fluid" alt="">
+              
             </div>
   
           </div>
           <!--Grid column-->
   
           <!--Grid column-->
-          <div class="col-md-6 mb-4 mb-md-0">
+          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-left" data-aos-offset="300">
   
-            <h3 class="font-weight-bold">Milestones & Memories: My Career Chronicles</h3>
+            <h3 class="font-weight-bold">Hi there...</h3>
   
-            <p class="text-muted text-justify">My career journey has been a thrilling exploration of my passions, where I've honed my skills, embraced new challenges, and achieved significant milestones along the way.
+            <p class="text-muted text-justify">I'm Athila Rahim, a passionate Software Development Engineer with over 1+ years of experience in Software Testing and Developing. 
+              I blend my web development skills with an insatiable curiosity for innovation. 
+              Beyond the screen, I'm a talkative and friendly person, always seeking new conversations and stories. 
+              Dive into my Linkedin, Facebook or Instagram profile to know more about me. 
+              Let's connect and craft something remarkable together!
                </p>
+  
+            <a class="btn btn-brown btn-md ml-0" href="assets/AthilaRahim_Resume.pdf" download="AthilaRahim_Resume" role="button">Download Resume</a>
   
           </div>
           <!--Grid column-->
@@ -117,11 +125,132 @@
       <!--Section: Content-->
   
   
+     </div>
     </div>
+  
+  
+    
+
+<!--Career block-->
+ <div class="careerblock" id="careerblock" data-aos="fade-up">
+    <div class="container my-5 py-5 z-depth-1 bg-white mt-5"> 
+      <!--Section: Content-->
+      <section class="px-md-4 mx-md-5 text-center text-lg-left dark-grey-text">
+  
+        <!--Grid row-->
+        <div class="row">
+  
+          <!--Grid column-->
+          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-offset="300">
+  
+            <h3 class="font-weight-bold">My Career Canvas</h3>
+  
+            <p class="text-muted text-justify">My career journey has been a thrilling exploration of my passions, where I've honed my skills, embraced new challenges, and achieved significant milestones along the way. Worked previously as a Software Development Engineer at Good Methods Global Pvt Ltd. Currenly working at Mplify Online Services Pvt Ltd as SDE-1. Throughout my work life I worked as a dedicated Software Tester by learning automation skills as well. Also I strongly hold my passion for web development and learned new technology stacks. I admit, learning is an endless task!
+               </p>
+  
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-left">
+  
+            <!--Image-->
+            <div class="view overlay z-depth-1-half">
+              <img src="images/achievement.jpg" class="img-fluid" alt="">
+              
+            </div>
+  
+          </div>
+          <!--Grid column-->
+  
+        </div>
+        <!--Grid row-->
+  
+  
+      </section>
+      <!--Section: Content-->
+  
+     </div>
+    </div>
+
+    <!--Contact block-->
+    <div class="contactblock" id="contactblock">
+     <div class="container z-depth-1 my-5 px-0" data-aos="zoom-in">
+  
+      <!--Section: Content-->
+      <section class="p-5 my-md-5 text-center brown">
+    
+        <!-- Section heading -->
+        <h3 class="text-center font-weight-bold text-white mt-5 mb-3">Contact Me</h3>
+        <!-- Section description -->
+        <h4 class="text-center font-weight-normal text-white mx-auto mb-4 pb-2">Anytime , Anywhere!</h4>
+    
+        <form class="mb-5 mx-md-5" action="send_email.php" method="post">
+    
+          <div class="row">
+            <div class="col-md-4 mb-4">
+    
+              <!-- Name -->
+              <input type="text" id="name" name="name" class="form-control z-depth-1" placeholder="Name">
+    
+            </div>
+            <div class="col-md-4 mb-4">
+    
+              <!-- Email -->
+              <input type="email" id="email" name="email" class="form-control z-depth-1" placeholder="Email">
+    
+            </div>
+            <div class="col-md-4 mb-4">
+    
+              <!-- Phone -->
+              <input type="number" id="phone" name="phone" class="form-control z-depth-1" placeholder="Phone (optional)">
+    
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-md-12 mb-4">
+    
+              <!-- Subject -->
+              <input type="text" id="subject" name="subject" class="form-control z-depth-1" placeholder="Subject">
+    
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-md-12">
+    
+              <div class="form-group mb-4">
+                <textarea class="form-control rounded z-depth-1" id="message" name="message" rows="3" placeholder="How can I help?"></textarea>
+              </div>
+    
+              <div class="text-center">
+                <button type="submit" class="btn btn-elegant z-depth-2">Submit</button>
+              </div>
+    
+            </div>
+          </div>
+    
+        </form>
+    
+      </section>
+      <!--Section: Content-->
+    
+     </div>
+    </div>
+  
+    <!--Contact block ends-->
+
   </section> 
  
-  <!-- End your project here-->
 
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init();
+    });
+  </script>
+  <!-- End your project here-->
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
