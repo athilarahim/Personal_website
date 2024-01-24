@@ -3,14 +3,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    $mailsubject = $_POST['subject'];
+    $mailmessage = $_POST['message'];
 
     $to = "rahimathila@gmail.com"; 
-    //$subject = "Message from personal website";
-   // $headers = "From: $email" . "\r\n";
-
-    mail($subject, $message, $name, $email);
+    $subject = "Message from personal website";
+    $message = "Name: $name\nEmail: $email\nPhone: $phone\nMail Subject: $mailsubject\nContent: $mailmessage\n";
+    mail($to, $subject, $message);
     echo "Email sent successfully!";
+
+    header("Location: index.html");
+
+    exit();
 }
 ?>
