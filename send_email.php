@@ -10,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "Message from personal website";
     $message = "Name: $name\nEmail: $email\nPhone: $phone\nMail Subject: $mailsubject\nContent: $mailmessage\n";
     mail($to, $subject, $message);
-    echo "Email sent successfully!";
 
     header("Location: index.html");
 
