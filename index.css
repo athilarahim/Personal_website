@@ -4,6 +4,7 @@ html,body{
     background-size: cover;
     background-attachment: fixed;
     scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .name{
@@ -31,22 +32,10 @@ html,body{
     margin-bottom: 10%;
 }
 
-.blog .carousel-indicators {
-	left: 0;
-	top: auto;
-    bottom: -40px;
 
-}
-
-.blog .carousel-indicators li {
-    background: #a3a3a3;
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
-}
-
-.blog .carousel-indicators .active {
-background: #707070;
+.error-input::placeholder {
+    color: red;
+    font-style: italic;
 }
 
 @media only screen and (max-width: 650px) {
@@ -57,4 +46,9 @@ background: #707070;
     .namesub{
         margin-left: 10%;
     }
+  }
+
+  @media (min-width:576px) and (max-width: 780px) {
+   
+    
   }

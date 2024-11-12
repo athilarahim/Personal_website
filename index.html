@@ -56,7 +56,6 @@
           aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-user"></i> Profile </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-          <a class="dropdown-item" href="#aboutblock">About Me</a>
           <a class="dropdown-item" href="#careerblock">My Career</a>
           <a class="dropdown-item" href="#cardsblock">Milestones</a>
           <a class="dropdown-item" href="#contactblock">Contact Me</a>
@@ -77,6 +76,7 @@
     <h3 class="namesub flex-center">Web Developer & Coding Enthusiast </h3>
     <div class="flex-center mt-3">
     <a href="#aboutblock" class="btn-outline-white btn text-capitalize rounded-pill hoverable">About me..</a>
+    <a href="projects.html" class="btn-outline-white btn text-capitalize rounded-pill hoverable">Explore projects</a>
     </div>
     </div>
 
@@ -112,14 +112,14 @@
   
             <h3 class="font-weight-bold">Hi there...</h3>
   
-            <p class="text-muted text-justify">I'm Athila Rahim, a passionate Software Development Engineer with over 1+ years of experience in Software Testing and Development. 
+            <p class="text-muted text-justify">I'm Athila Rahim, a passionate Software Development Engineer with over 2+ years of experience in Software Testing and Development. 
               I blend my web development skills with an insatiable curiosity for innovation. 
               Beyond the screen, I'm a talkative and friendly person, always seeking new conversations and stories. 
               Dive into my Linkedin, Facebook or Instagram profile to know more about me. 
               Let's connect and craft something remarkable together!
                </p>
   
-            <a class="btn btn-brown btn-md ml-0" href="assets/AthilaRahim_Resume.pdf" download="AthilaRahim_Resume" role="button">Download Resume</a>
+            <a class="btn btn-brown btn-md ml-0" href="assets/Athila_Rahim.pdf" download="AthilaRahim_Resume" role="button">Download Resume</a>
   
           </div>
           <!--Grid column-->
@@ -155,8 +155,8 @@
   
             <h3 class="font-weight-bold">My Career Canvas</h3>
   
-            <p class="text-muted text-justify">My career journey has been a thrilling exploration of my passions, where I've honed my skills, embraced new challenges, and achieved significant milestones along the way. Worked previously as a Software Development Engineer at Good Methods Global Pvt Ltd. Currenly working at Mplify Online Services Pvt Ltd as SDE-1. Throughout my career I worked as a dedicated Software Tester by learning automation skills as well. Also I strongly hold my passion for web development and I'm learning new technology stacks. I admit, learning is an endless task!
-               </p>
+            <p class="text-muted text-justify">My career journey has been a thrilling exploration of my passions, where I've honed my skills, embraced new challenges, and achieved significant milestones along the way. Worked previously as a Software Development Engineer at Good Methods Global Pvt Ltd. Most recently I worked at Mplify Online Services Pvt Ltd as SDE-1 for 1.5 years. Throughout my career I worked as a dedicated Software Tester by learning automation skills as well. Also I strongly hold my passion for web development and I'm learning new technology stacks. I admit, learning is an endless task!
+            </p>
   
           </div>
           <!--Grid column-->
@@ -194,7 +194,7 @@
 
       <section class="px-md-4 mx-md-5 text-center text-lg-left dark-grey-text">
       <h3 class="font-weight-bold text-center mb-4">Celebrate, Connect, Contribute</h3>
-     <div class="card-group">
+  <div class="card-group">
     <div class="card" data-aos="flip-left" data-aos-offset="100">
     <img src="images/nss.jpg" style="height: 200px;" class="card-img-top" alt="nss-image"/>
     <div class="card-body">
@@ -250,44 +250,50 @@
         <!-- Section description -->
         <h4 class="text-center font-weight-normal text-white mx-auto mb-4 pb-2">Anytime , Anywhere!</h4>
     
-        <form class="mb-5 mx-md-5" name="contact" netlify>
+        <form class="mb-5 mx-md-5" name="contact" id="contactForm" netlify>
     
           <div class="row">
             <div class="col-md-4 mb-4">
     
               <!-- Name -->
-              <input type="text" id="name" name="name" class="form-control z-depth-1" placeholder="Name">
+              <input type="text" id="name" name="name" class="form-control z-depth-1" placeholder="Name" >
+            
     
             </div>
             <div class="col-md-4 mb-4">
     
               <!-- Email -->
-              <input type="email" id="email" name="email" class="form-control z-depth-1" placeholder="Email">
+              <input type="email" id="email" name="email" class="form-control z-depth-1" placeholder="Email" >
     
             </div>
+
             <div class="col-md-4 mb-4">
     
               <!-- Phone -->
               <input type="number" id="phone" name="phone" class="form-control z-depth-1" placeholder="Phone (optional)">
     
             </div>
+            
           </div>
     
           <div class="row">
             <div class="col-md-12 mb-4">
     
               <!-- Subject -->
-              <input type="text" id="subject" name="subject" class="form-control z-depth-1" placeholder="Subject">
+              <input type="text" id="subject" name="subject" class="form-control z-depth-1" placeholder="Subject" >
     
             </div>
+
           </div>
     
           <div class="row">
             <div class="col-md-12">
     
               <div class="form-group mb-4">
-                <textarea class="form-control rounded z-depth-1" id="message" name="message" rows="3" placeholder="How can I help?"></textarea>
+                <textarea class="form-control rounded z-depth-1" id="message" name="message" rows="3" placeholder="How can I help?" ></textarea>
+
               </div>
+
     
               <div class="text-center">
                 <input type="submit" value="Submit" class="btn btn-elegant z-depth-2">
@@ -295,6 +301,7 @@
     
             </div>
           </div>
+          <div class="formMessage" id="formMessage"></div>
     
         </form>
     
@@ -346,6 +353,10 @@
           <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Follow me</h6>
 
+            <div class="row">
+
+
+              <div class="col-md-6 col-sm-6">
             <!-- Facebook -->
             <a
                class="btn btn-elegant btn-floating bg-dark"
@@ -353,8 +364,9 @@
                role="button"
                ><i class="fab fa-facebook-f"></i
               ></a>
+            </div>
 
-
+            <div class="col-md-6 col-sm-6">
             <!-- Instagram -->
             <a
                class="btn btn-elegant btn-floating bg-dark"
@@ -362,21 +374,33 @@
                role="button"
                ><i class="fab fa-instagram"></i
               ></a>
+              </div>
+
+            </div>
 
             <!-- Linkedin -->
+             <div class="row">
+
+              <div class="col-md-6 col-sm-6">
             <a
                class="btn btn-elegant btn-floating bg-dark"
                href="https://www.linkedin.com/in/athila-rahim-43b411181/"
                role="button"
                ><i class="fab fa-linkedin-in"></i
               ></a>
+
+            </div>
             <!-- Github -->
+            <div class="col-md-6 col-sm-6">
             <a
                class="btn btn-elegant btn-floating bg-dark"
                href="https://github.com/athilarahim/"
                role="button"
                ><i class="fab fa-github"></i
               ></a>
+              </div>
+
+            </div>
           </div>
         </div>
         <!--Grid row-->
@@ -393,13 +417,74 @@
 
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
+ 
+ document.getElementById("contactForm").addEventListener("submit",(e)=>{
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const phone = document.getElementById("phone").value;
+  const message = document.getElementById("message").value;
+
+
+  let isValid = true;
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if(name===""){
+    document.getElementById("name").placeholder = "Please enter your name";
+    document.getElementById("name").classList.add("error-input");
+    isValid = false;
+  }
+
+  if(email===""){
+    document.getElementById("email").placeholder = "Please enter your email";
+    document.getElementById("email").classList.add("error-input");
+    isValid = false;
+  }
+  else if(!emailRegex.test(email)){
+    document.getElementById("email").placeholder = "Invalid Email Format!";
+    document.getElementById("email").classList.add("error-input");
+    isValid = false;
+  }
+  if (subject === "") {
+    document.getElementById("subject").placeholder = "Subject is required";
+    document.getElementById("subject").classList.add("error-input");
+  
+      isValid = false;
+  }
+
+  if (message === "") {
+     document.getElementById("message").placeholder = "Message is required";
+     document.getElementById("message").classList.add("error-input");
+
+        isValid = false;
+    }
+
+
+    if(isValid){
+      formMessage.textContent = "Form submitted successfully!";
+      formMessage.style.color = "green";
+      document.getElementById("name").placeholder="";
+      document.getElementById("email").placeholder="";
+      document.getElementById("phone").placeholder="";
+      document.getElementById("subject").placeholder="";
+      document.getElementById("message").placeholder="";
+      document.getElementById("contactForm").reset();
+
+    }
+
+
+    return false;
+ }); 
+
+
+
     document.addEventListener('DOMContentLoaded', function() {
         AOS.init();
     });
 
-    $('#blogCarousel').carousel({
-				interval: 5000
-		});
   </script>
 
 
